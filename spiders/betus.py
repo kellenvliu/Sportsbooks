@@ -9,7 +9,7 @@ class BetusSpider(scrapy.Spider):
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
 
     def start_requests(self):
-        yield scrapy.Request(url='https://www.betus.com.pa/sportsbook/nfl-football-odds.aspx', headers={
+        yield scrapy.Request(url='https://www.betus.com.pa/sportsbook/nhl-ice_hockey-odds.aspx', headers={
             'User-Agent': self.user_agent
         })
 
