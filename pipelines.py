@@ -9,16 +9,15 @@ import pymongo
 
 class MongodbPipeline(object):
     collection_name = "betus"
-    
 
     def open_spider(self, spider):
-        logging.warning("pipline opened")
+        logging.debug("pipeline opened")
         self.client = pymongo.MongoClient("mongodb+srv://kellen:testtest@cluster0.yvmkr.mongodb.net/BetUS?retryWrites=true&w=majority")
         self.db = self.client["BetUS"]
         
 
     def close_spider(self, spider):
-        logging.warning("pipline closed")
+        logging.debug("pipeline closed")
         self.client.close()
     
     def process_item(self, item, spider):
