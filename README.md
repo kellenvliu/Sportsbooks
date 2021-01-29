@@ -4,8 +4,11 @@ This application scrapes sports betting websites and analyzes them to find arbit
 The following sites are scraped:
 
 betus.com
+
 bovada.com
+
 fanduel.com
+
 betnow.eu
 
 We use MongoDB and Pymongo to manage incoming data. The database information in this repository DOES NOT link to a working database. In order to use this application, a MongoDB database must be set up.
@@ -13,5 +16,7 @@ We use MongoDB and Pymongo to manage incoming data. The database information in 
 Packages Used:
 
 Scrapy
+
 pymongo
+
 dnspython
